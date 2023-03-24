@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Seidi Harakawa">
+    <meta name="description" content="Calculadora desenvolvida em HTML, CSS e JavaScript para a realização de cálculos numéricos.">
+    <link rel="stylesheet" href="./style.css">
+    <title>Conversor de moedas</title>
+</head>
+<body>
+    <header class="container">
+        <h1 class="page-title">
+          Conversor de moedas
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="Logo Imersão Dev">
+    </header>
+    <a href="https://alura.com.br/" target="_blank">
+      <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo-1" alt="Logo Alura">
+      <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png" class="alura-logo-2" alt="Logo Alura">
+    </a>
+    <section>
+        <label for="valorEmDolar">Dólar americano: </label>
+        <input type="number" id="valorEmDolar" name="valorEmDolar" placeholder="US$">
+
+        <label for="cotacaoDoDolar">Cotação do Dólar: </label>
+        <input type="number" id="cotacaoDoDolar" name="cotacaoDoDolar" placeholder="Valor Cotação">
+
+        <label for="valorEmReal">Valor em real: </label>
+        <input type="number" id="valorEmReal" nome="valorEmReal" readonly placeholder="R$">
+        
+        <a onclick="calcular()">Calcular Cotação</a>
+        <a onclick="limpar()">Limpar</a>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
